@@ -1,0 +1,153 @@
+﻿<Window
+    x:Class="MasterFloor.Desktop.Windows.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="clr-namespace:MasterFloor.Desktop.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:entities="clr-namespace:MasterFloor.Desktop.Entities"
+    xmlns:local="clr-namespace:MasterFloor.Desktop"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Партнеры Мастер Пол"
+    Width="700"
+    Height="600"
+    MinWidth="700"
+    MinHeight="600"
+    Background="#F4E8D3"
+    Icon="../Images/app_icon.ico"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+        <converters:SaleByPartnerProductsConverter x:Key="SBPPC" />
+    </Window.Resources>
+
+    <Grid Margin="10,15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="6.5*" />
+            <RowDefinition Height="1.5*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel VerticalAlignment="Center">
+            <Image
+                Width="50"
+                Height="50"
+                Source="../Images/app_icon.ico" />
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="24"
+                FontWeight="Bold"
+                Foreground="#67BA80"
+                Text="Мастер пол" />
+        </StackPanel>
+
+        <ListView
+            x:Name="PartnersLV"
+            Grid.Row="1"
+            Padding="10,15">
+            <ListView.ItemTemplate>
+                <DataTemplate DataType="{x:Type entities:Partner}">
+                    <Border
+                        Padding="25,20"
+                        BorderBrush="Black"
+                        BorderThickness="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="7*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock
+                                        FontSize="16"
+                                        FontWeight="SemiBold"
+                                        Text="{Binding PartnerType.Title}" />
+                                    <Separator Width="4" Visibility="Hidden" />
+                                    <TextBlock
+                                        FontSize="16"
+                                        FontWeight="SemiBold"
+                                        Text="|" />
+                                    <Separator Width="4" Visibility="Hidden" />
+                                    <TextBlock
+                                        FontSize="16"
+                                        FontWeight="SemiBold"
+                                        Text="{Binding Title}" />
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding DirectorLastname}" />
+                                    <Separator Width="4" Visibility="Hidden" />
+                                    <TextBlock Text="{Binding DirectorFirstname}" />
+                                    <Separator Width="4" Visibility="Hidden" />
+                                    <TextBlock Text="{Binding DirectorMiddlename}" />
+                                </StackPanel>
+
+                                <TextBlock Text="{Binding Phone, StringFormat='+7 {0}'}" />
+                                <TextBlock Text="{Binding Rate, StringFormat='Рейтинг: {0}'}" />
+
+                            </StackPanel>
+
+
+                            <TextBlock
+                                Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                FontSize="16"
+                                Text="{Binding PartnerProducts, Converter={StaticResource SBPPC}}" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+
+        <Grid Grid.Row="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                <Button
+                    Margin="5"
+                    Background="#67BA80"
+                    Click="OpenPartnerProductsWindow"
+                    FontWeight="Bold"
+                    Foreground="#FFFFFF">
+                    <TextBlock Padding="10,15" Text="Посмотреть историю реализованной продукции" />
+                </Button>
+            </StackPanel>
+
+            <StackPanel
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Orientation="Horizontal">
+                <Button
+                    Margin="5"
+                    Background="#67BA80"
+                    Click="OpenUpdatePartnerWindow"
+                    FontWeight="Bold"
+                    Foreground="#FFFFFF">
+                    <TextBlock Padding="10,15" Text="Редактировать партнера" />
+                </Button>
+
+
+                <Button
+                    Margin="5"
+                    Background="#67BA80"
+                    Click="OpenCreatePartnerWindow"
+                    FontWeight="Bold"
+                    Foreground="#FFFFFF">
+                    <TextBlock Padding="10,15" Text="Создать партнера" />
+                </Button>
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+</Window>
