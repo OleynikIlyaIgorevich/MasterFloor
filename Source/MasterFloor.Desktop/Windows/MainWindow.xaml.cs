@@ -44,10 +44,10 @@ namespace MasterFloor.Desktop.Windows
                 // Привязка данных к ListView для отображения
                 PartnersLV.ItemsSource = partners;
             }
-            catch (Exception ex)
+            catch
             {
                 // Вывод сообщения об ошибке при возникновении исключения
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Произошло исключение при получении партнеров!", "Произошло исключение!");
             }
         }
 
