@@ -133,7 +133,7 @@ namespace MasterFloor.Desktop.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MasterFloor.Desktop;V1.0.0.0;component/windows/updatepartnerwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MasterFloor.Desktop;component/windows/updatepartnerwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\UpdatePartnerWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -11,7 +11,7 @@ public class SaleByPartnerProductsConverter : IValueConverter
         // Преобразуем входное значение в список товаров партнера
         var partnerProducts = value as List<PartnerProduct>;
 
-        // Если преобразование невозможно или список пуст, возвращаем ошибку
+        // Если преобразование невозможно, возвращаем ошибку
         if (partnerProducts == null)
             return "Error";
 
@@ -21,13 +21,13 @@ public class SaleByPartnerProductsConverter : IValueConverter
         // Определение размера скидки по сумме продаж:
         // Диапазоны проверяются последовательно (от большего к меньшему)
         if (10000 <= fullPrice && fullPrice < 50000)
-            return "5%"; // Умеренные продажи
+            return "5%"; // минимальная скидка
 
         if (50000 <= fullPrice && fullPrice < 300000)
-            return "10%"; // Высокие продажи
+            return "10%"; // средняя скидка
 
         if (fullPrice >= 300000)
-            return "15%"; // Максимальный уровень
+            return "15%"; // Максимальный скидки
 
         // Если сумма меньше 10 000, скидка отсутствует
         return "0%";

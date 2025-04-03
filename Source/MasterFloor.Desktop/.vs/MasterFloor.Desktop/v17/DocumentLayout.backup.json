@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ilyao\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Source\\MasterFloor.Desktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C8A60C1-F4B5-4949-BC0A-908C367949C7}|MasterFloor.Desktop.csproj|c:\\users\\ilyao\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterfloor\\source\\masterfloor.desktop\\services\\productgeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C8A60C1-F4B5-4949-BC0A-908C367949C7}|MasterFloor.Desktop.csproj|solutionrelative:services\\productgeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C8A60C1-F4B5-4949-BC0A-908C367949C7}|MasterFloor.Desktop.csproj|c:\\users\\ilyao\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterfloor\\source\\masterfloor.desktop\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C8A60C1-F4B5-4949-BC0A-908C367949C7}|MasterFloor.Desktop.csproj|solutionrelative:windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C8A60C1-F4B5-4949-BC0A-908C367949C7}|MasterFloor.Desktop.csproj|c:\\users\\ilyao\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterfloor\\source\\masterfloor.desktop\\windows\\createpartnerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C8A60C1-F4B5-4949-BC0A-908C367949C7}|MasterFloor.Desktop.csproj|solutionrelative:windows\\createpartnerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +27,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductGeneratorService.cs",
-              "DocumentMoniker": "C:\\Users\\ilyao\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Source\\MasterFloor.Desktop\\Services\\ProductGeneratorService.cs",
-              "RelativeDocumentMoniker": "Services\\ProductGeneratorService.cs",
-              "ToolTip": "C:\\Users\\ilyao\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Source\\MasterFloor.Desktop\\Services\\ProductGeneratorService.cs",
-              "RelativeToolTip": "Services\\ProductGeneratorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T12:24:41.373Z",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ilyao\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Source\\MasterFloor.Desktop\\Windows\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Windows\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ilyao\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Source\\MasterFloor.Desktop\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "Windows\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-03T05:46:53.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreatePartnerWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ilyao\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Source\\MasterFloor.Desktop\\Windows\\CreatePartnerWindow.xaml",
+              "RelativeDocumentMoniker": "Windows\\CreatePartnerWindow.xaml",
+              "ToolTip": "C:\\Users\\ilyao\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Source\\MasterFloor.Desktop\\Windows\\CreatePartnerWindow.xaml",
+              "RelativeToolTip": "Windows\\CreatePartnerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-03T05:46:43.949Z",
               "EditorCaption": ""
             }
           ]
